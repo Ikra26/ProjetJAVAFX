@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.miage.ikram.projet.controleur.GraphiqueControleur">
+    <stylesheets>
+        <URL value="@../styles/style.css" />
+    </stylesheets>
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <children>
+                <Label text="Graphique de la Simulation" styleClass="header-label"/>
+                <LineChart fx:id="lineChart" title="Niveau d'Eau dans la Baignoire">
+                    <yAxis>
+                        <NumberAxis label="Heure" />
+                    </yAxis>
+                    <xAxis>
+                        <NumberAxis label="Niveau d'Eau (L)" />
+                    </xAxis>
+                </LineChart>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

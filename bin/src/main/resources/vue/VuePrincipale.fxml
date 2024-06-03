@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ul.miage.ikram.projet.controleur.ControleurPrincipal">
+    <stylesheets>
+        <URL value="@../styles/style.css" />
+    </stylesheets>
+    <children>
+        <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <VBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label styleClass="details-label" text="Somme des Débits des Robinets:" />
+                                <Label fx:id="sommeRobinets" styleClass="details-value" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label styleClass="details-label" text="Somme des Débits des Fuites:" />
+                                <Label fx:id="sommeFuites" styleClass="details-value" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label styleClass="details-label" text="Quantité Actuelle dans la Baignoire:" />
+                                <Label fx:id="quantiteActuelle" styleClass="details-value" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <Label styleClass="details-label" text="Heure Actuelle:" />
+                                <Label fx:id="heureActuelle" styleClass="details-value" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" spacing="20.0">
+                            <children>
+                                <Button fx:id="demarrerButton" onAction="#demarrerPauseSimulation" styleClass="custom-button start-button" text="Commencer" />
+                                <Button fx:id="resetButton" disable="true" onAction="#resetSimulation" styleClass="custom-button reset-button" text="Réinitialiser" />
+                                <Button fx:id="editerRobinetsButton" onAction="#editerRobinets" styleClass="custom-button edit-button" text="Paramètres" />
+                                <Button fx:id="exporterButton" disable="true" onAction="#exporterCsv" styleClass="custom-button export-button" text="Exporter CSV" />
+                                <Button fx:id="graphButton" disable="true" onAction="#afficherGraphique" styleClass="custom-button graph-button" text="Afficher Graphique" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <StackPane alignment="CENTER" prefHeight="300.0" prefWidth="600.0">
+                    <Pane maxHeight="300.0" maxWidth="600.0">
+                        <Rectangle fx:id="waterInBath" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="139.0" layoutX="58.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="408.0" />
+                        <ImageView fx:id="imageBaignoire" fitHeight="300.0" fitWidth="600.0" layoutX="0" layoutY="0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/bathtub.png" />
+                            </image>
+                        </ImageView>
+                    </Pane>
+                </StackPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

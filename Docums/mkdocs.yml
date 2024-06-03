@@ -1,0 +1,7 @@
+site_name: TP JAVA Simulation Remplissage Baignoire
+nav:
+    - Accueil: index.md
+    - Installation: installation.md
+    - Utilisation: utilisation.md
+    - Développement: developpement.md
+theme: readthedocs
