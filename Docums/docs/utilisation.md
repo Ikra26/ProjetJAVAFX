@@ -4,12 +4,13 @@
 
 Voici une démonstration vidéo de notre projet :
 
+!!! Si la vidéo ne marche pas video de démo sur cet emplacement  Friend_7-TP_JAVA_Simulation_Remplissage_Baignoire-main\Docums\docs\video
+
 <video width="600" controls>
   <source src="video/demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-Problème malgré compression de fichier, vous trouverez la vidéo sur le dossier dans Docms/video/demo.mp4
-## Interface Utilisateur
+
 
 ### Fenêtre Principale
 

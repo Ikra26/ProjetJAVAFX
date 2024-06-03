@@ -16,15 +16,14 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 Clonez le dépôt de votre projet en utilisant la commande suivante dans votre terminal :
 
 ```sh
-git clone https://github.com/votre-utilisateur/votre-repo.git
+git clone https://github.com/Ikra26/ProjetJAVAFX.git
 ```
 Naviguer dans le répertoire du projet
 Déplacez-vous dans le répertoire du projet cloné :
 
 ```sh
-cd votre-repo
+cd ProjetJAVAFX
 ```
-Remplacez votre-repo par le nom du répertoire du projet.
 
 3. Construire le projet avec Maven
 Utilisez Maven pour construire le projet. Cette commande téléchargera les dépendances nécessaires et compilera le projet :
@@ -46,16 +45,9 @@ Cela lancera l'application JavaFX.
 2. Extraire l'archive
 Extrayez le contenu de l'archive téléchargée :
 
-```sh
-unzip votre-projet-distribution-binaire.zip
-```
 3. Naviguer dans le répertoire extrait
 Déplacez-vous dans le répertoire extrait :
 
-```sh
-cd votre-projet-distribution-binaire
-```
-Remplacez votre-projet-distribution-binaire par le nom du répertoire extrait.
 
 4. Exécuter le projet
 Utilisez le script fourni pour exécuter le projet.  :
@@ -80,5 +72,3 @@ Ouvrez votre projet dans Eclipse.
 Faites un clic droit sur votre projet dans l'Explorateur de projet.
 Sélectionnez la classe launcher.
 Cliquez sur "Run" (flèche verte) ou appuyez sur Ctrl+F11.
-
-##Problème d'éxecution avec le terminal, veuillez éxecuter le projet par un IDE

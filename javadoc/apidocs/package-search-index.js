@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"fr.ul.miage.ikram.projet"},{"l":"fr.ul.miage.ikram.projet.controleur"},{"l":"fr.ul.miage.ikram.projet.modele"},{"l":"fr.ul.miage.ikram.projet.utilitaires"}];updateSearchResults();
